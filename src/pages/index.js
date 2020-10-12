@@ -5,8 +5,9 @@ import Gallery from '../components/Gallery'
 import Layout from '../components/layout'
 
 const HomeIndex = () => {
-  const siteTitle = 'Gatsby Starter - Strata'
-  const siteDescription = 'Site description'
+  const siteTitle = 'Полный курс по WordPress'
+  const siteDescription =
+    'Сайты любой сложности, даже если вы никогда этим не занимались и ничего не знаете о программировании.'
 
   return (
     <Layout>
@@ -25,11 +26,10 @@ const HomeIndex = () => {
             </h2>
           </header>
           <p>
-            Даже если вы никогда этим не занимались и ничего не знаете о программировании.
+            Даже если вы никогда этим не занимались и ничего не знаете о
+            программировании.
           </p>
-          <p>
-
-          </p>
+          <p></p>
           <ul className="actions">
             <li>
               <a href="#" className="button">
