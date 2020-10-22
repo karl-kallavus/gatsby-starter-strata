@@ -51,7 +51,7 @@ const HomeIndex = () => {
           <ul className="actions">
             <li>
               <a href="#" className="button">
-                Learn More
+                Оставить заявку
               </a>
             </li>
           </ul>
