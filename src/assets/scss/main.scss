@@ -494,8 +494,9 @@
 				}
 
 				&:before {
-					background: url('images/overlay.png'), url('images/overlay.png');
-					opacity: 1.0;
+					// background: url('images/overlay.png'), url('images/overlay.png');
+					background: linear-gradient(45deg, #7104ba, #1d1c4c);
+					opacity: 0.7;
 				}
 			}
 		}
@@ -901,9 +902,9 @@
 		@include vendor('flex-direction', 'column');
 		@include vendor('align-items', 'flex-end');
 		@include vendor('justify-content', 'space-between');
-		background-color:		_palette(accent2, bg);
+		background:	linear-gradient(45deg, #2a009c, #300046);
 		background-attachment:	scroll,								fixed;
-		background-image:		url('images/overlay.png'),			url('../images/bg.jpg');
+		// background-image:		url('images/overlay.png'),			url('../images/bg.jpg');
 		background-position:	top left,							top left;
 		background-repeat:		repeat,								no-repeat;
 		background-size:		contain,								contain;
