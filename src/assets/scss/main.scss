@@ -40,7 +40,7 @@
 		)
 	));
 
-	$size-header-width: 35%;
+	$size-header-width: 23%;
 	$size-header-pad: 4em;
 
 /* Basic */
@@ -967,7 +967,7 @@
 			padding: 0;
 
 			li {
-				border-left: solid 1px _palette(accent2, border);
+				// border-left: solid 1px _palette(accent2, border);
 				display: inline-block;
 				line-height: 1em;
 				margin-left: 0.75em;

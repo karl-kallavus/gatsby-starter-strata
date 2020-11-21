@@ -23,8 +23,8 @@ const Footer = () => (
       <ul className="copyright">
         <li>&copy; ИП Каллавус Карл Меэлисович</li>
         <li>ОГРНИП 320784700121688</li>
+        <li>karl.kallavus@gmail.com</li>
         <li>Упрощенная система налогообложения</li>
-        <li>Эл. почта для связи: karl.kallavus@gmail.com</li>
       </ul>
     </div>
   </div>

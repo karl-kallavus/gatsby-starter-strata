@@ -1,24 +1,32 @@
 import React, { useState, useCallback } from 'react'
+import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import Carousel, { Modal, ModalGateway } from 'react-images'
+import { Dialog } from '@reach/dialog'
+import '@reach/dialog/styles.css'
 import GalleryItem from './GalleryItem'
-import DayDescriptionsTest from './DayDescriptions';
 import { DEFAULT_IMAGES } from '../constants/defaultImages'
 
-const Gallery = ({ images = DEFAULT_IMAGES }) => {
-  const [lightboxIsOpen, setLightboxIsOpen] = useState(false)
-  const [selectedIndex, setSelectedIndex] = useState(0)
+const Wrapper = styled.div({
+  display: 'flex',
+  flexDirection: 'row',
+  flexWrap: 'wrap',
+})
 
-  const toggleLightbox = useCallback(
-    (selectedIndex) => {
-      setLightboxIsOpen(!lightboxIsOpen)
-      setSelectedIndex(selectedIndex)
-    },
-    [lightboxIsOpen]
-  )
+const Gallery = ({ images = DEFAULT_IMAGES }) => {
+  const [selectedIndex, setSelectedIndex] = useState(0)
+  const [isDialogOpen, setShowDialog] = React.useState(false)
+  const closeDialog = () => {
+    setSelectedIndex(null);
+    setShowDialog(false)
+  };
+
+  const openDialog = (selectedIndex) => {
+    setSelectedIndex(selectedIndex)
+    setShowDialog(true)
+  }
 
   return (
-    <div>
+    <Wrapper>
       {images && (
         <div className="row">
           {images.map((obj, i) => {
@@ -30,24 +38,23 @@ const Gallery = ({ images = DEFAULT_IMAGES }) => {
                 caption={obj.caption}
                 description={obj.description}
                 position={obj.position}
-                toggleLightbox={obj.toggleLightbox}
                 position={i}
-                toggleLightbox={toggleLightbox}
+                toggleLightbox={openDialog}
               />
             )
           })}
         </div>
       )}
-      <ModalGateway>
-        {lightboxIsOpen && (
-          <Modal onClose={toggleLightbox}>
-            <DayDescriptionsTest index={selectedIndex} />
-            {/* <p>Подробное описание</p> */}
-            {/* <Carousel currentIndex={selectedIndex} views={images} /> */}
-          </Modal>
-        )}
-      </ModalGateway>
-    </div>
+      <Dialog
+        css={{ borderRadius: '4px' }}
+        isOpen={isDialogOpen}
+        onDismiss={closeDialog}
+      >
+        <p>My text is red because the style prop got applied to the div</p>
+        selected index: {selectedIndex}
+        <button onClick={closeDialog}>Okay</button>
+      </Dialog>
+    </Wrapper>
   )
 }
 
