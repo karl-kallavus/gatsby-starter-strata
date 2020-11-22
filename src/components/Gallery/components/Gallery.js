@@ -1,10 +1,11 @@
-import React, { useState, useCallback } from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { Dialog } from '@reach/dialog'
 import '@reach/dialog/styles.css'
 import GalleryItem from './GalleryItem'
 import { DEFAULT_IMAGES } from '../constants/defaultImages'
+import Descriptions from './DayDescriptions'
 
 const Wrapper = styled.div({
   display: 'flex',
@@ -16,9 +17,9 @@ const Gallery = ({ images = DEFAULT_IMAGES }) => {
   const [selectedIndex, setSelectedIndex] = useState(0)
   const [isDialogOpen, setShowDialog] = React.useState(false)
   const closeDialog = () => {
-    setSelectedIndex(null);
+    setSelectedIndex(null)
     setShowDialog(false)
-  };
+  }
 
   const openDialog = (selectedIndex) => {
     setSelectedIndex(selectedIndex)
@@ -50,9 +51,14 @@ const Gallery = ({ images = DEFAULT_IMAGES }) => {
         isOpen={isDialogOpen}
         onDismiss={closeDialog}
       >
-        <p>My text is red because the style prop got applied to the div</p>
-        selected index: {selectedIndex}
-        <button onClick={closeDialog}>Okay</button>
+        {Descriptions({ index: selectedIndex })}
+        <ul className="actions">
+          <li>
+            <a onClick={closeDialog} className="button">
+              Продолжить
+            </a>
+          </li>
+        </ul>
       </Dialog>
     </Wrapper>
   )
