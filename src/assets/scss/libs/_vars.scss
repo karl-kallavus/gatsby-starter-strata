@@ -16,8 +16,14 @@
 	);
 
 // Font.
+	@font-face {
+		font-family: "Gilroy Light";
+		src: url("src/assets/fonts/Gilroy-Light.otf");
+	}
+
+
 	$font: (
-		family:				('Source Sans Pro', Helvetica, sans-serif),
+		family:				('Gilroy Light', 'Source Sans Pro', Helvetica, sans-serif),
 		family-fixed:		('Courier New', monospace),
 		weight:				400,
 		weight-bold:		400
