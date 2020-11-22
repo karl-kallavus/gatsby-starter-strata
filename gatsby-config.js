@@ -20,5 +20,17 @@ module.exports = {
     },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Droid Sans', 'Droid Serif']
+        },
+        custom: {
+          families: ['Gilroy Light'],
+          urls: ['/src/assets/fonts/Gilroy-Light.otf']
+        }
+      }
+    }
   ],
 }
