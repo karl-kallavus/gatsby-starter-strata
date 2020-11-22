@@ -38,16 +38,20 @@ const HomeIndex = () => {
         <section id="one">
           <header className="major">
             <h2>
-              Полный курс по WordPress.
+              Cделайте первый сайт на WordPress
               <br />
-              Сайты любой сложности.
+              за 12 занятий.
             </h2>
           </header>
-          <p>
-            Даже если вы никогда этим не занимались и ничего не знаете о
-            программировании.
-          </p>
-          <p></p>
+
+          <p>Научитесь и сделаете сайт на WordPress, за который готовы платить компании.</p>
+          <p>Сайт визитка, блог или интернет-магазин, версия для мобильного телефона - 12 занятий достаточно, чтобы уверенно развивать проект самостоятельно.</p>
+          <p>Курс дистанционный. Это гибко. Обсуждаем расписание занятий.</p>
+          <p>На курсе будем обсуждать и учиться на вашем проекте.</p>
+          <p>Цель курсов - получить конкретные результаты в плане знаний и умений.</p>
+          <p>Возврат денег, если что-то не так.</p>
+          <p>Если вы ничего не знаете о программировании - не бойтесь, курс рассчитан для вас. </p>
+
           <ul className="actions">
             <li>
               <a href="#" className="button">
@@ -80,7 +84,11 @@ const HomeIndex = () => {
           </p>
           <div className="row">
             <div className="8u 12u$(small)">
-              <form method="post" action="https://formspree.io/f/xbjpglag" onSubmit={submitForm}>
+              <form
+                method="post"
+                action="https://formspree.io/f/xbjpglag"
+                onSubmit={submitForm}
+              >
                 <div className="row uniform 50%">
                   <div className="6u 12u$(xsmall)">
                     <input

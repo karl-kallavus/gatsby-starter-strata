@@ -10,11 +10,9 @@ const Header = () => (
         <img src={avatar} alt="" />
       </a>
       <h1>
-        <strong>Научу</strong> делать&nbsp;
+        Полный курс по <strong>WordPress</strong> &nbsp;
         <br />
-        сайты на Wordpress&nbsp;
-        <br />
-        за 12 занятий.
+        за <strong>12</strong> занятий.
       </h1>
     </div>
     <Footer />
