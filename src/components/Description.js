@@ -12,6 +12,7 @@ import IconMortarboard from '../assets/icons/mortarboard.svg'
 const IconWrapper = styled.div({
   minWidth: '50px',
   minHeight: '50px',
+  marginRight: '16px',
 })
 const Text = styled.p({
   margin: 0,
@@ -22,7 +23,6 @@ const Row = styled.div({
   display: 'flex',
   flexDirection: 'row',
   alignItems: 'center',
-  gap: '16px',
 })
 const Wrapper = styled.div({
   '& > * + *': {
@@ -45,19 +45,19 @@ const Items = [
     text: (
       <Text>
         Сайт визитка, блог или интернет-магазин, версия для мобильного телефона
-        - 12 занятий достаточно, чтобы уверенно развивать проект самостоятельно.
+        - 12 занятий достаточно, чтобы уверенно развивать проект любой сложности самостоятельно.
       </Text>
     ),
   },
   {
     icon: <IconGlobe />,
     text: (
-      <Text>Курс дистанционный. Это гибко. Обсуждаем расписание занятий.</Text>
+      <Text>Курс дистанционный. Это гибко. Обсуждаем расписание занятий. Занятие идет 1 час 10 минут.</Text>
     ),
   },
   {
     icon: <IconMortarboard />,
-    text: <Text>На курсе будем обсуждать и учиться на вашем проекте.</Text>,
+    text: <Text>На курсе будем обсуждать ваш проект и учиться на нем.</Text>,
   },
   {
     icon: <IconMedal />,

@@ -12,7 +12,7 @@ const Header = () => (
       <h1>
         Полный&nbsp;курс&nbsp;по&nbsp;<strong>WordPress</strong>
         <br />
-        &nbsp;за&nbsp;<strong>12</strong> занятий
+        &nbsp;за&nbsp;<strong>12</strong>&nbsp;занятий
       </h1>
     </div>
     <Footer />
