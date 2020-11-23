@@ -59,7 +59,7 @@ const HomeIndex = () => {
           <Author />
         </section>
 
-        <section id="three">
+        <section id="request">
           <h2>Заказать курс</h2>
           <Inquery />
 

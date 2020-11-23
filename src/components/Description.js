@@ -96,7 +96,7 @@ const Description = () => {
       {items}
       <ul className="actions">
         <li>
-          <a href="#" className="button">
+          <a href="#request" className="button">
             Оставить заявку
           </a>
         </li>
