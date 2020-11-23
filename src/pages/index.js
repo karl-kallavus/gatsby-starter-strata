@@ -6,6 +6,7 @@ import Gallery from '../components/Gallery'
 import Layout from '../components/layout'
 import Author from '../components/Author'
 import Why from '../components/Why'
+import Inquery from '../components/Inquery'
 
 const HomeIndex = () => {
   const siteTitle = 'Полный курс по WordPress'
@@ -77,11 +78,8 @@ const HomeIndex = () => {
 
         <section id="three">
           <h2>Заказать курс</h2>
-          <p>
-            Accumsan pellentesque commodo blandit enim arcu non at amet id arcu
-            magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem
-            vulputate lorem neque lorem ipsum dolor.
-          </p>
+          <Inquery />
+
           <div className="row">
             <div className="8u 12u$(small)">
               <form
