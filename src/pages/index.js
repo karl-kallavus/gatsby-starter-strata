@@ -41,19 +41,11 @@ const HomeIndex = () => {
             <h2>
               Cделайте первый сайт на WordPress
               <br />
-              за 12 занятий.
+              &nbsp;за 12 занятий.
             </h2>
           </header>
 
           <Description />
-
-          <ul className="actions">
-            <li>
-              <a href="#" className="button">
-                Оставить заявку
-              </a>
-            </li>
-          </ul>
         </section>
 
         <section id="two">

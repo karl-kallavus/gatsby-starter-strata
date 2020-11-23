@@ -91,7 +91,18 @@ const Description = () => {
       </Row>
     )
   })
-  return <Wrapper>{items}</Wrapper>
+  return (
+    <Wrapper>
+      {items}
+      <ul className="actions">
+        <li>
+          <a href="#" className="button">
+            Оставить заявку
+          </a>
+        </li>
+      </ul>
+    </Wrapper>
+  )
 }
 
 export default Description
