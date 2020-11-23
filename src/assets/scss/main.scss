@@ -476,7 +476,7 @@
 				color: #fff;
 				content: 'Подробнее';
 				display: inline-block;
-				font-size: 0.8em;
+				font-size: 0.9em;
 				font-weight: _font(weight-bold);
 				left: 50%;
 				line-height: 2.25em;
@@ -891,7 +891,7 @@
 		}
 
 		p {
-			font-size: 0.8em;
+			font-size: 1em;
 			line-height: 1.5em;
 			margin: 0;
 		}
@@ -963,9 +963,10 @@
 
 		.copyright {
 			color: _palette(accent2, fg-light);
-			font-size: 0.8em;
+			font-size: 0.9em;
+			line-height: 1.5;
 			list-style: none;
-			margin: (_size(element-margin) * 0.5) 0 0 0;
+			// margin: (_size(element-margin) * 0.5) 0 0 0;
 			padding: 0;
 
 			li {

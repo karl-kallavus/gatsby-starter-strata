@@ -4,6 +4,8 @@ import Helmet from 'react-helmet'
 import Description from '../components/Description'
 import Gallery from '../components/Gallery'
 import Layout from '../components/layout'
+import Author from '../components/Author'
+import Why from '../components/Why'
 
 const HomeIndex = () => {
   const siteTitle = 'Полный курс по WordPress'
@@ -40,7 +42,6 @@ const HomeIndex = () => {
           <header className="major">
             <h2>
               Cделайте&nbsp;сайт&nbsp;на&nbsp;WordPress&nbsp;
-              <br />
               за&nbsp;12&nbsp;занятий.
             </h2>
           </header>
@@ -49,7 +50,7 @@ const HomeIndex = () => {
         </section>
 
         <section id="two">
-          <h2>Программа курса:</h2>
+          <h2>Нас ждет 12 занятий по 75 минут</h2>
 
           <Gallery />
 
@@ -60,6 +61,18 @@ const HomeIndex = () => {
               </a>
             </li>
           </ul> */}
+        </section>
+
+        <section id="why">
+          <h2>Почему WordPress?</h2>
+
+          <Why />
+        </section>
+
+        <section id="author">
+          <h2>Об авторе курса</h2>
+
+          <Author />
         </section>
 
         <section id="three">
@@ -82,7 +95,7 @@ const HomeIndex = () => {
                       type="text"
                       name="_replyto"
                       id="name"
-                      placeholder="Name"
+                      placeholder="Имя"
                     />
                   </div>
                   <div className="6u 12u$(xsmall)">
@@ -90,14 +103,14 @@ const HomeIndex = () => {
                       type="email"
                       name="email"
                       id="email"
-                      placeholder="Email"
+                      placeholder="Эл. почта"
                     />
                   </div>
                   <div className="12u">
                     <textarea
                       name="message"
                       id="message"
-                      placeholder="Message"
+                      placeholder="Интересует курс по WordPress..."
                       rows="4"
                     ></textarea>
                   </div>
