@@ -24,10 +24,7 @@ const HomeIndex = () => {
       <div id="main">
         <section id="one">
           <header className="major">
-            <h2>
-              Cделайте&nbsp;сайт&nbsp;на&nbsp;WordPress&nbsp;
-              за&nbsp;12&nbsp;занятий.
-            </h2>
+            <h2>Cделайте сайт на WordPress за 12 занятий.</h2>
           </header>
 
           <Description />
