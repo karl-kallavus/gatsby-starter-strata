@@ -32,7 +32,7 @@ const Wrapper = styled.div({
 
 const Items = [
   {
-    icon: <IconTrophy />,
+    icon: <IconTrophy style={{ width: '50px', height: '50px' }}/>,
     text: (
       <Text>
         Научитесь и сделайте сайт на WordPress, за который готовы платить
@@ -41,7 +41,7 @@ const Items = [
     ),
   },
   {
-    icon: <IconAtom />,
+    icon: <IconAtom style={{ width: '50px', height: '50px' }}/>,
     text: (
       <Text>
         Сайт визитка, блог или интернет-магазин, версия для мобильного телефона
@@ -50,17 +50,17 @@ const Items = [
     ),
   },
   {
-    icon: <IconGlobe />,
+    icon: <IconGlobe style={{ width: '50px', height: '50px' }}/>,
     text: (
       <Text>Курс дистанционный. Это гибко. Обсуждаем расписание занятий.</Text>
     ),
   },
   {
-    icon: <IconMortarboard />,
+    icon: <IconMortarboard style={{ width: '50px', height: '50px' }}/>,
     text: <Text>На курсе будем обсуждать ваш проект и учиться на нем.</Text>,
   },
   {
-    icon: <IconMedal />,
+    icon: <IconMedal style={{ width: '50px', height: '50px' }}/>,
     text: (
       <Text>
         Цель курсов - получить конкретные результаты в плане знаний и умений.
@@ -68,7 +68,7 @@ const Items = [
     ),
   },
   {
-    icon: <IconBulb />,
+    icon: <IconBulb style={{ width: '50px', height: '50px' }}/>,
     text: (
       <Text>
         Если вы ничего не знаете о программировании - не бойтесь, курс рассчитан
@@ -77,7 +77,7 @@ const Items = [
     ),
   },
   {
-    icon: <IconExam />,
+    icon: <IconExam style={{ width: '50px', height: '50px' }}/>,
     text: <Text>Возврат денег, если не довольны результатами.</Text>,
   },
 ]
