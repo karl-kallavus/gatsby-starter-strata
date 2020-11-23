@@ -9,14 +9,16 @@ const Text = styled.p({
 })
 const Image = styled.img({
   borderRadius: '4px',
+  marginTop: '16px',
 })
 const Wrapper = styled.div({
   display: 'flex',
   flexDirection: 'row',
-  maxWidth: '80%',
-  '& > * + *': {
-    marginLeft: '16px',
-  },
+  flexWrap: 'wrap',
+  justifyContent: 'space-around',
+  '& > img': {
+      maxWidth: '300px',
+  }
 })
 const Author = () => {
   return (
@@ -31,8 +33,8 @@ const Author = () => {
         увлекаюсь мобильной сьемкой.
       </Text>
       <Wrapper>
-        <Image src={ConfImage2} height="auto" width="50%" />
-        <Image src={ConfImage1} height="auto" width="50%" />
+        <Image src={ConfImage2} height="auto" width="300px" />
+        <Image src={ConfImage1} height="auto" width="300px" />
       </Wrapper>
     </>
   )
