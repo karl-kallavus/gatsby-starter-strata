@@ -16,7 +16,8 @@
 	);
 
 	$font: (
-		family:				('Cormorant Garamond', 'Source Sans Pro', Helvetica, sans-serif),
+		// family:				('Cormorant Garamond', Helvetica, sans-serif),
+		family:				(Helvetica, sans-serif),
 		family-fixed:		('Courier New', monospace),
 		weight:				400,
 		weight-bold:		600
