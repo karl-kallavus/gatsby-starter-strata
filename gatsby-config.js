@@ -21,14 +21,10 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: "gatsby-plugin-react-svg",
       options: {
-        google: {
-          families: ['Droid Sans', 'Droid Serif']
-        },
-        custom: {
-          families: ['Gilroy Light'],
-          urls: ['/src/assets/fonts/Gilroy-Light.otf']
+        rule: {
+          include: /icons/ // See below to configure properly
         }
       }
     }
