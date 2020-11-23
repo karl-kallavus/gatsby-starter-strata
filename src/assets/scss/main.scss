@@ -3,6 +3,7 @@
 @import 'libs/mixins';
 @import '../css/font-awesome.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 /*
 	Strata by HTML5 UP
@@ -92,6 +93,7 @@
 
 	h1, h2, h3, h4, h5, h6 {
 		color: _palette(fg-bold);
+		font-family: 'Montserrat', sans-serif;
 		font-weight: _font(weight-bold);
 		line-height: 1em;
 		margin: 0 0 (_size(element-margin) * 0.5) 0;
@@ -937,7 +939,7 @@
 
 		h1 {
 			color: _palette(accent2, fg);
-			font-size: 1.35em;
+			font-size: 18px;
 			line-height: 1.75em;
 			margin: 0;
 		}
