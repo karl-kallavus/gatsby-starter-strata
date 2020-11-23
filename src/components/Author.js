@@ -10,6 +10,8 @@ const Text = styled.p({
 const Image = styled.img({
   borderRadius: '4px',
   marginTop: '16px',
+  maxWidth: '300px',
+  maxHeight: '225px',
 })
 const Wrapper = styled.div({
   display: 'flex',
