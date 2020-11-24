@@ -16,7 +16,7 @@ const IconWrapper = styled.div({
 })
 const Text = styled.p({
   margin: 0,
-  fontSize: '18px',
+  fontSize: '20px',
   lineHeight: 1.5,
 })
 const Row = styled.div({
